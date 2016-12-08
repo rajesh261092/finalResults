@@ -1,1 +1,11 @@
 Final Results Repo
+
+Use the following option to enable smt.
+If you are wondering where this is defined:
+configs/common/Options.py
+
+    parser.add_option("--smt", action="store_true", default=False,
+                      help = """
+                      Only used if multiple programs are specified. If true,
+                      then the number of threads per cpu is same as the
+                      number of programs.""")
